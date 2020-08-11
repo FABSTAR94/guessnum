@@ -9,15 +9,18 @@
     </head>
 
     <body>
-        <h1>Go Ahead and guess what number am I?</h1>
+        <h1 class="color">Go Ahead and guess what number am I?</h1>
         <h2>Let me tell you the rules. You have to guess a number between 1 and 50. You only have 5 possible guesses so make sure to guess wisely. Don't worry we will give you hints if you are too hot or too cold.</h2>
-        <label for="guessInput">Guess the number: </label><input type="text" id="guessInput" class="guessInput">
-        <input type="submit" value="Submit" class="guessSubmit">
-        <div>
-            <p class="guessCount">quantity</p>
-            <p class="result">r</p>
-            <p class="hotOrCold">hc</p>
+        <div class="resultParas">
+            <p class="guesses"></p>
+            <p class="lastResult"></p>
+            <p class="lowOrHi"></p>
         </div>
+        <label for="guessField">Enter a guess: </label><input type="text" id="guessField" class="guessField">
+        <input type="submit" value="Submit guess" class="guessSubmit">
+        <script type="text/javascript" src="js/num.js"></script>
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     </body>
 
     </html>
